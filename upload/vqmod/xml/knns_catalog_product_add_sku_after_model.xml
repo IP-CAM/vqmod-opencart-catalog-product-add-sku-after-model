@@ -28,7 +28,6 @@
 				<add><![CDATA[$_['text_sku']        = 'SKU:';]]></add>
 			</operation>
 		</file>
-
 		<file path="catalog/controller/product/" name="product.php" error="log">
 			<operation error="skip">
 				<search position="after"><![CDATA[$data['text_model'] = $this->language->get('text_model');]]></search>
@@ -39,7 +38,6 @@
 				<add><![CDATA[			$data['sku'] = $product_info['sku'];]]></add>
 			</operation>
 		</file>
-
 		<file path="catalog/view/theme/*/template/product/" name="product.tpl" error="log">
 			<operation error="skip">
 				<search position="after"><![CDATA[<li class="p-model"><?php echo $text_model; ?> <span class="p-model" itemprop="model"><?php echo $model; ?></span></li>]]></search>
